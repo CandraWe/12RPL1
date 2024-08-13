@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <title>Sidebar Example</title>
+</head>
+<body>
+    <style>
+        body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 0;
+  height: 100%;
+  background-color: #111;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar button {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#toggleSidebar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar a {
+    padding: 15px;
+  }
+  #toggleSidebar {
+    display: block;
+  }
+  .content {
+    padding-left: 0;
+  }
+}
+    </style>
+  <div class="container">
+    <div class="content">
+      <button onClick="buka()" id="toggleSidebar">&#9776;</button>
+      <h1>Main Content</h1>
+      <p>Your main content goes here.</p>
+    </div>
+    <div class="sidebar" id="sidebar">
+      <button onClick="tutup()" id="closeSidebar">&times;</button>
+      <p>Sidebar Content</p>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    document.querySelector('#toggleSidebar')
+function buka(){document.getElementById('sidebar').style.width = '100vw';
+};
+
+document.querySelector('#closeSidebar')
+function tutup() { document.getElementById('sidebar').style.width = '0';
+};
+  </script>
+</body>
+</html>

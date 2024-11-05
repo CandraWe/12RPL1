@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="wrapper">
+        <p>Ini Paragraf 1</p>
+        <p>Ini Paragraf 2</p>
+        <p>Ini Paragraf 3</p>
+        <p>Ini Paragraf 4</p>
+
+        <div>
+            <h1>ini Judul</h1>
+            <div>
+                <p>Komentar 1</p>
+                <p>Komentar 2</p>
+                <p>Komentar 3</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var tag_wrapper=document.getElementById("wrapper");
+        console.log(tag_wrapper.children);
+        console.log(tag_wrapper.children[2]);
+        //jika ingin menampilkan textnya di console
+        console.log(tag_wrapper.children[2].innerHTML);
+
+        console.log(tag_wrapper.children[4].children[0]);
+        console.log(tag_wrapper.children[4].children[1]);
+
+        console.log(tag_wrapper.children[4].children[1].children[1]);
+    </script>
+
+</body>
+</html>

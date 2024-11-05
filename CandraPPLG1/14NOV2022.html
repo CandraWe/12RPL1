@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Pembeli
+            nama 
+            barang 
+                nama
+                harga
+                jumlah
+
+                nama
+                harga
+                jumlah
+        */
+
+
+        // var Pembeli = [
+        //     {
+        //         Nama: "Ucup",
+        //         Barang : [
+        //         {
+        //             NamaProduk:"Sirop",Harga: "15000", Jumlah: "1",
+        //         },
+        //         {
+        //             NamaProduk:"Roti",Harga: "2500",Jumlah:"1",
+        //         },
+        //         {
+        //             NamaProduk:"Energen",Harga: "2500",Jumlah:"1",
+        //         }
+        //         ]
+        //     }
+        //     ]
+
+        // Pembeli.forEach(Pembeli =>{
+        //     document.write("Nama : "+Pembeli.Nama+"<br>");
+
+
+        //     Barang.forEach(Barang =>{
+        //     document.write("NamaProduk : "+Barang.NamaProduk+"<br>");
+        //     document.write("Harga : "+Barang.Harga+"<br>");
+        //     document.write("Jumlah Produk : "+Barang.Jumlah+"<br>");
+        //     document.write("<br>");
+        //     });
+        
+        // });
+
+
+
+        //17November2022
+
+        var Pembeli = [
+            {
+                Nama : "Ucup",
+                Barang : 
+                [
+                    {Produk : "Roti", Harga :1000, Jumlah : 2},
+                    {Produk : "Mobil", Harga :2000000, Jumlah : 3}
+                ]
+            },
+            {
+                Nama : "Caplin",
+                Barang : 
+                [
+                    {Produk : "Permen", Harga :1000, Jumlah : 1},
+                    {Produk : "Motor", Harga :130000, Jumlah : 3}
+                ]
+            },
+            {
+                Nama : "Usep",
+                Barang : 
+                [
+                    {Produk : "Sabun", Harga :1000, Jumlah : 1},
+                    {Produk : "Rumah", Harga :100000000, Jumlah : 1}
+                ]
+            },
+            {
+                Nama : "Ali",
+                Barang : 
+                [
+                    {Produk : "Sikat Gigi", Harga :1000, Jumlah : 1},
+                    {Produk : "Apartment", Harga :100000000, Jumlah : 1}
+                ]
+            },
+            {
+                Nama : "Doyok",
+                Barang : 
+                [
+                    {Produk : "Buku", Harga :1000, Jumlah : 1},
+                    {Produk : "Hotel", Harga :100000000, Jumlah : 1}
+                ]
+            },
+            {
+                Nama : "Unyil",
+                Barang : 
+                [
+                    {Produk : "Sendal", Harga :1000, Jumlah : 1},
+                    {Produk : "Kosan", Harga :100000000, Jumlah : 1}
+                ]
+            },
+        ];
+
+        Pembeli.forEach(p => {
+            document.write(`Nama : ${p.Nama} <br/>`);
+            document.write("Barang :")
+            p.Barang.forEach(barang =>{
+                //document.write(`${barang.Produk}, `);
+                document.write(`${barang.Produk} ( ${barang.Harga * barang.Jumlah} ), `);
+            })
+            document.write("<br/>");
+            document.write("<br/>");
+
+            // document.write(`Nama Produk : ${p.Barang[0].Produk} <br/>`);
+            // document.write(`Nama Produk : ${p.Barang[1].Produk} <br/>`);
+
+            // document.write(`Harga : ${p.Barang[0].Harga} <br/>`);
+
+            // document.write(`Jumlah : ${p.Barang[0].Jumlah} <br/>`);
+
+            //document.write("<br>")
+        });
+        
+        //document.write(`Nama : ${Pembeli[0].Nama}` );
+    </script>
+</body>
+</html>

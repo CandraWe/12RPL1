@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTPUT</title>
+</head>
+<body>
+    <script>
+
+        // {} kurung kurawal
+        // () objek
+        // [] array
+
+
+        // Pakai class
+            // Blueprint / template dari objek
+
+
+
+            /*
+
+            class mobil {
+                // Atribut
+                    warna = "Merah";
+                    merk;
+                    ukuran_ban;
+                    jumlah_ban = 4;
+
+                //langsung nama function
+                // Method / function
+                    maju() {
+                        return "Maju dengan " + this.jumlah_ban + " ban"
+                    }
+
+                    mundur() {}
+
+                    ngerem() {}
+
+            }
+
+
+            // pakai new dan namanya
+            //membuat objek dengan 
+
+            //tampilkan objeknya yaitu ferrarri
+            var Ferrarri = new mobil();
+
+                Ferrarri.merk = "FERRARRI";
+
+        
+            document.write(Ferrarri.warna + '</br>')
+            document.write(Ferrarri.maju() + '</br>')
+
+
+        // Tidak pakai class 
+
+
+        //pakai sama dengan
+        var Toyota = {
+            warna : "Merah",
+            jumlah_ban : 4,
+            ukuran_ban : 30,
+
+            //cara mmembuat function tdk menggunakan class
+            maju : function(){},
+            mundur : function(){},
+            ngerem : function(){},
+
+        }
+
+
+        document.write(Toyota.warna);
+
+
+        */
+
+
+        //SISWA  -> class \ objek
+            //NAMA
+            //KELAS
+            //JURUSAN
+            //TAHUN LAHIR
+            //ALAMAT
+
+            //BISA HITUNG UMUR SESUAI TAHUN LAHIR '#TAHUN SEKARANG DIKURANGI TAHUN LAHIR'
+
+
+            /*
+        1. Sifa
+            nama = Syifa
+            kelas = 10
+            jurusan = pplg
+            tahun_lahir = 2007
+
+        2. Sri
+            nama = Sri
+            kelas = 11
+            jurusan = TKR
+            tahun_lahir = 2000
+
+        3. Rahayu
+             nama = Rahayu
+             kelas = 10
+             jurusan = TBSM
+             tahun_lahir = 2022
+
+
+
+
+        //Hasil
+            umur syifa 21 tahun
+            umur sri 23 tahun
+            umur rahayu 1 tahun
+
+            */
+
+
+            class SISWA {
+                constructor(Nama, Kelas, Jurusan, Tahun_lahir){
+                    this.Nama = Nama;
+                    this.Kelas = Kelas;
+                    this.Jurusan = Jurusan;
+                    this.Tahun_lahir = Tahun_lahir;
+                    this.Tahun_sekarang = 2023;
+                }
+                umur (){
+                    return (this.Tahun_sekarang - this.Tahun_lahir)
+                }
+
+            }
+
+            //objek
+            var Siswa1 = new SISWA("Syifa ", 10, "PPLG", 2007);
+            var Siswa2 = new SISWA("Sri ", 11, "TKR", 2000);
+            var Siswa3 = new SISWA("Rahayu ", 10, "TBSM", 2022);
+
+
+            document.write("Umur " + Siswa1.Nama + Siswa1.umur() +"<br>");
+            document.write("Umur " + Siswa2.Nama + Siswa2.umur() +"<br>");
+            document.write("Umur " + Siswa3.Nama + Siswa3.umur() +"<br>");
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

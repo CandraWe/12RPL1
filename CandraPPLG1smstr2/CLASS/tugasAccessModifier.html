@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Tugas 2
+
+        // Ubahlah kode program berikut agar atribut pajak tidak bisa dirubah
+        // Dan jika dirubah diluar class akan terjadi erorr
+
+        class ongkir {
+            #Pajak = 500;
+            berat //kg
+
+            hitung_biaya(){
+                return this.berat * 1000;
+            }
+
+            hitung_totalbiaya(){
+                return this.hitung_biaya() + this.#Pajak
+        }
+    }
+
+    var ongkir_sepeda = new ongkir();
+    ongkir_sepeda.berat = 15; //15Kg
+    ongkir_sepeda.#Pajak = 1000; // pajak harusnya tdk bisa dirubah /tdk bisa diakses
+
+    document.write(ongkir_sepeda.hitung_totalbiaya());
+
+
+
+
+        // Tugas 1
+
+        class ongkir {
+          #Pajak = 500;
+          berat //kg
+          hitung_biaya(){
+              return this.berat * 1000;
+          }
+          hitung_totalbiaya(){
+              return this.hitung_biaya() + this.#Paj
+      }
+  }
+  var ongkir_sepeda = new ongkir();
+  ongkir_sepeda.berat = 15; //15Kg
+  ongkir_sepeda.#Pajak = 1000; // pajak harusnya tdk
+  document.write(ongkir_sepeda.hitung_totalbiaya());    
+    
+    
+    
+
+    </script>
+</body>
+</html>

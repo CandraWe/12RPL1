@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        PRINSIP OOP
+
+            INHERITANCE = PEWARISAN CLASS(PARENT CLASS) MENURUNKAN KARAKTERISTIK DAN
+                    METODE KPD CLASS(CHILD CLASS) / YG DIWARISKANNYA ATRIBUT & METHOD
+            ENKAPSULASI = hak akses 
+
+        */
+
+
+
+        //1 parent bisa banyak child
+        class enemy {  //parent
+            name;
+            hp;
+            attack_point;
+
+            attack(){
+                return "Serang Karakter Utama!";
+
+            }
+        }
+
+
+        //pakai extends |extends nya ke enemy
+
+
+        class pocong extends enemy{} //child
+
+            var pocong1 = new pocong();
+            document.write(pocong1.attack() +"<br>")
+
+        //child baru
+        class zombie extends enemy{ //child
+            walk(){
+                return "Jalan";
+            }
+        }
+
+        var zombie1 = new zombie();
+        zombie1.name = "Ucup";
+        zombie1.hp = 32000;
+        zombie1.attack_point = 500;
+
+        document.write(zombie1.attack() +"<br>");
+        document.write(zombie1.name)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&JavaScript</title>
+</head>
+<body>
+    <h1>Form registrasi</h1>
+    <form action="" method="post">
+        <p>
+            Email:
+            <input type="email" id="email" placeholder="masukkan email">
+        </p>
+        <p>
+            Nama:
+            <input type="text" id="nama" placeholder="masukkan nama">
+        </p>
+        <p>
+            Username:
+            <input type="text" id="username" placeholder="masukkan username">
+        </p>
+        <p>
+            Umur:
+            <input type="number" id="umur" placeholder="masukkan umur anda">
+        </p>
+        <p>
+            Password:
+            <input type="password" id="password" placeholder="masukkan password">
+        </p>
+        <p>
+            Jenis kelamin:
+            <input type="radio"> laki-laki
+            <input type="radio"> perempuan
+        </p>
+            Kelas:
+           <select id="kelas">
+              <option>X PPLG 1</option>
+              <option>X PPLG 2</option>
+              <option>X TKJ 1</option>
+              <option>X TKJ 2</option>
+              <option>X TKJ 3</option>
+              <option>X TKJ 4</option>
+              <option>X TO 1</option>
+              <option>X TO 2</option>
+              <option>X TO 3</option>
+              <option>X TO 4</option>
+              <option>X TO 5</option>
+              <option>X TO 6</option>
+              <option>X TO 7</option>
+              <option>X TO 8</option>
+              <option>X TO 9</option>
+              <option>X TO 10</option>
+              <option>X MPLB 1</option>
+              <option>X MPLB 2</option>
+        </select>
+        </p>
+        <p>
+            Color:
+            <input type="color" >
+        </p>
+        <button type="submit" onclick="login()">Simpan</button>
+    </form>
+
+    <script>
+        //Gabungan antara html dengan javascript
+        //27 maret 2023 puasaaaaaaaaaaaaaaaaaa
+
+
+
+        var NamaKau = document.getElementById("nama");
+         //Biodata.innerText = "NAMA"
+         console.log(NamaKau)
+
+        var Gmail = document.getElementById("email");
+         console.log(Gmail)
+
+        var UmurMu = document.getElementById("umur");
+        var Kelas = document.getElementById("kelas");
+
+        console.log(UmurMu)
+        console.log(Kelas)
+    </script>
+
+</body>
+</html>

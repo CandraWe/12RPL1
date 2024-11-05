@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //parents and child 
+
+        class kendaraan{
+            merek = "Merek 1 ";
+            nama = "Kendaraan 1 ";
+
+            maju(){
+                return "Kendaraan Maju";
+            }
+        }
+
+
+        //agar tdk menulis ulang pakai 'extends'
+
+        //extends = MEMASUKKAN ISI DARI CLASS
+
+        //jika ada 2 function dari parents dan child maka yg muncul function yg di child
+        class mobil extends kendaraan{
+            //method Overriding
+            //Ditimpah
+            maju(){
+                return "Kendaraan Maju dengan 4 Ban di Darat";
+            }
+        }
+
+        var sedan = new mobil();
+
+
+        document.write(sedan.maju() + "<br>");
+        document.write(sedan.nama + "<br>");
+        document.write(sedan.merek + "<br>");
+
+    </script>
+</body>
+</html>

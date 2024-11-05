@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // 13 FEBRUARI 2023 
+        
+        /*
+        KONSEP DASAR OOP / PILAR
+            INHERITANCE / PEWARISAN
+            ENKAPSULASI 
+            ABSTRAKSI
+            POLLYMORPHISME
+        */
+
+
+        // ENKAPSULASI
+        // Private and Public
+
+        // Public bisa diakses dimanapun (didalam atau diluar class)
+
+        //diluar class dan didalam class bisa diakses
+        // ketika bikin sebuah objek dari class maka atributnya bisa dipakai di luar class. contoh
+
+        
+
+        class siswa {
+            nama_belakang;
+            nama_depan;
+            nama_lengkap;
+            nilai_mtk;
+            nilai_dlg;
+            #KKM = 75;
+
+            cek_kelulusan(){
+                var nilai = (this.nilai_mtk + this.nilai_dlg) / 2;
+                if(nilai > this.#KKM){
+                    return "Lulus";
+                }else{
+                    return "Tidak Lulus";
+                }
+            }
+        }
+
+        var siti = new siswa();
+        siti.nama_belakang = "Maemunah";
+        siti.nama_depan = "Siti";
+        siti.nama_lengkap = "Siti Maemunah";
+        siti.nilai_mtk = 80;
+        siti.nilai_dlg = 20;
+
+        // Private gak bisa diakses di luar class
+        // Jika private bisa diakses bisa ditambahkan #
+        //siti.#KKM = 10;
+
+        //document.write(siti.nama_belakang)
+        document.write(siti.cek_kelulusan());
+        
+        
+
+        // Private gak bisa diakses di luar class
+        // Private diakses ditambahkan #
+
+    </script>
+</body>
+</html>

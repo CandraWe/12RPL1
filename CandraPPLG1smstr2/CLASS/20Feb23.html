@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <script>
+        
+        // 23 Februari 2023
+
+        /*
+
+        Title
+            tdk boleh kurang dari 5 huruf
+
+        Price
+            Tdk boleh angka min
+            harus berupa angka
+
+        */
+
+
+        class buku {
+            #id;
+            #title = "";
+            #price = 0;
+            #author;
+            #date;
+
+            //id
+            set id(ID){
+                this.#id = ID;
+            }
+
+            get id(){
+               return this.#id;
+            }
+
+            //title
+            set title(Title){
+                if(Title.length < 5 ){
+                    document.write(" *title tdak boleh kurang dari 5 huruf" + "<br>");
+                }            
+                this.#title = Title;
+            }
+            get title(){
+                return this.#title;
+            }
+
+            //price
+            set price(Price){
+                if(Price < 0){
+                    document.write(" *price tdk boleh min" + "<br>");
+                    return;
+                }
+                if(typeof Price !== 'number' ){ //typeof mengecek tipe data
+                    document.write(" *price harus berupa angka!!" + "<br>");
+                    return;
+                }
+                this.#price = Price;
+            }
+            get price(){
+                return this.#price;
+            }
+
+            // author
+            set author(Author){
+                this.#author = Author;
+            } 
+            get author(){
+                return this.#author;
+            }
+
+            //date
+            set date (tanggal){
+                this.#date = tanggal;
+            }
+            get date(){
+                return this.#date;
+            }
+
+        }
+
+        var Buku_SiDu = new buku;
+        Buku_SiDu.id = 112233 ;
+        Buku_SiDu.title = "UCUP" ;
+        Buku_SiDu.price = 1;
+        Buku_SiDu.author = "Wahyu" ;
+        Buku_SiDu.date = 15 ;
+
+        //document.write(Buku_SiDu.id + "<br>");
+        document.write(Buku_SiDu.title + "<br>");
+        document.write(Buku_SiDu.price + "<br>");
+        //document.write(Buku_SiDu.author + "<br>");
+        //document.write(Buku_SiDu.date + "<br>");
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        document.write("VOLUME Bangun Ruang" +"<br>")
+
+
+        /*
+        //MENCARI VOLUME
+
+            + penjumlahan
+            * perkalian
+            - pengurangan
+            ** pemangkatan
+            / pembagian
+            % sisa bagi
+
+        */
+
+
+        //Bangun ruang
+            //BALOK p * l * t
+            //KUBUS s * s * s * s
+            //LIMAS_SEGI_EMPAT 1/2 * luas_alas * t
+            //TABUNG Phi * r^2 * t
+ 
+        // extends ke bangun_ruang
+
+        class bangun_ruang {
+            volume(){}
+
+        }
+
+        //BALOK p * l * t
+
+        class balok extends bangun_ruang{
+            p
+            l
+            t
+
+             volume(){
+                return (this.p * this.l * this.t)
+             }
+        } 
+
+        var balok1 = new balok ();
+        balok1.p = 2
+        balok1.l = 3
+        balok1.t = 2
+
+        document.write("Balok = "+balok1.volume() +"<br>")
+
+
+        //KUBUS s * s * s * s
+
+        class kubus extends bangun_ruang{
+            s
+
+            volume(){
+                return this.s * this.s * this.s * this.s
+            }
+        }
+
+        var kubus1 = new kubus();
+        kubus1.s = 5
+
+        document.write("Kubus = "+kubus1.volume() + "<br>")
+
+        //LIMAS_SEGI_EMPAT 1/2 * luas_alas * t
+        class LIMAS_SEGI_EMPAT extends bangun_ruang{
+            luas_alas
+            t
+            setengah
+
+            volume(){
+                return this.setengah * this.luas_alas * this.t
+            }
+
+        }
+
+        var LS4 = new LIMAS_SEGI_EMPAT();
+        LS4.setengah = 1/2
+        LS4.t = 14
+        LS4.luas_alas = 250
+
+        document.write("Limas Segi Empat = "+LS4.volume() +"<br>")
+
+        //TABUNG Phi * r^2 * t
+        class TABUNG extends bangun_ruang{
+            Phi
+            r
+            t
+
+            volume(){
+                return this.Phi * this.r * this.t
+            }
+        }
+
+        var tabung1 = new TABUNG();
+        tabung1.Phi = 22/7
+        tabung1.r = 4**2
+        tabung1.t = 21
+
+        document.write ("Tabung = "+tabung1.volume()+"<br>")
+        
+
+    </script>
+</body>
+</html>

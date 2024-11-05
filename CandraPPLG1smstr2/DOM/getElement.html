@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="parent">
+        <p class="paragraf">Paragraf 1</p>
+        <p class="paragraf">Paragraf 2</p>
+        <p class="paragraf">Paragraf 3</p>
+    </div>
+
+    <p id="parent">Ini Parent</p>
+
+    <script> // Senin,22 Mei 2023
+        //
+        console.log(document.getElementById("parent")); //berdasarkan nama id
+        //hanya satu element
+
+        console.log(document.getElementsByClassName("paragraf"));//berdasarkan nama class
+        //
+        console.log(document.getElementsByClassName("paragraf")[1]);
+        //hanya
+
+        console.log(document.getElementsByTagName("div"));//berdasarkan nama tag
+        //hanya
+
+
+        //cara manggil pakai css menggunakan querySelector
+        console.log(document.querySelector("#parent"));//hanya mengambil yang pertamanya saja
+        // # untuk id
+        console.log(document.querySelector(".paragraf"));
+        console.log(document.querySelectorAll(".paragraf")[0]);
+        // . untuk class
+        console.log(document.querySelectorAll("#parent"));//jika ingin semuanya menggunakan All
+
+    
+    </script>
+
+</body>
+</html>

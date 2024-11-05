@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+//PBO(Pemrograman Berorientasi Objek)
+        
+        var kelinci = {
+            Nama : "Alfin",
+            Jenis : "Anggora",
+            Gigi : "2",
+            Bulu : {
+                Bulu__ : "lebat/tebal",
+                Warna_bulu : "hitam dan putih",
+            },
+            Warna_Mata : "Hitam",
+            Kaki : {
+                Jumlah_kaki : 2,
+                Warna_kaki : "hitam dan putih"
+            },
+            Tangan : {
+                Jumlah_tangan : 2,
+                Warna_tangan_kiri : "hitam",
+                Warna_tangan_kanan : "putih",
+            },
+            Telinga : {
+                Jumlah_telinga : 2,
+                Warna_telinga : "putih diluar dan merah muda di dalam",
+            },
+            Tidur : function(){
+                return " Tidur di rumput,dan lantai";
+            },
+            Jalan : function(){
+                return " Berjalan dengan cara lompat-lompat";
+            },
+            
+
+        }
+
+        document.write('Kelinci ini namanya ' + kelinci.Nama);
+        document.write(' berjenis ' +  kelinci.Jenis + "<br/>");
+        document.write(' Memiliki gigi yang besar ' +  kelinci.Gigi + "<br/>");
+        document.write(' Memiliki bulu yang ' + kelinci.Bulu.Bulu__);
+        document.write(' yang berwarna ' + kelinci.Bulu.Warna_bulu + "<br/>");
+        document.write(' Meiliki warna mata ' + kelinci.Warna_Mata + "<br/>");
+        document.write('Memiliki kaki yg panjang ' + kelinci.Kaki.Jumlah_kaki);
+        document.write(' yang berwarna ' + kelinci.Kaki.Warna_kaki + "<br/>");
+        document.write('Memiliki tangan yg panjang ' + kelinci.Tangan.Jumlah_tangan);
+        document.write(' tangan kiri berwarna ' + kelinci.Tangan.Warna_tangan_kiri);
+        document.write(' dan tangan kanan berwarna ' + kelinci.Tangan.Warna_tangan_kanan + "<br/>");
+        document.write(' Memiliki telinga panjang ' + kelinci.Telinga.Jumlah_telinga );
+        document.write(' yang berwarna ' + kelinci.Telinga.Warna_telinga + "<br/>");
+
+
+
+        document.write( "<br/>"+kelinci.Tidur())
+        document.write( "<br/>"+kelinci.Jalan())
+
+
+
+
+
+
+
+
+
+        //document.write(kelinci.Nama);
+        //document.write(kelinci.Jalan;
+
+
+    </script>
+</body>
+</html> 
